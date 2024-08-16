@@ -26,6 +26,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::middleware('auth')->group(function () {
+    Route::get('/messages', [MessageController::class, 'index']);
     Route::post('/message', [MessageController::class, 'store']);
 });
 

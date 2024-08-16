@@ -1,6 +1,7 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head } from '@inertiajs/vue3';
+import ChatBox from '@/Components/ChatBox.vue';
 </script>
 
 <template>
@@ -17,6 +18,10 @@ import { Head } from '@inertiajs/vue3';
                     <div class="p-6 text-gray-900">You're logged in!</div>
                 </div>
             </div>
+        </div>
+
+        <div class="py-12">
+            <ChatBox />
         </div>
     </AuthenticatedLayout>
 </template>
