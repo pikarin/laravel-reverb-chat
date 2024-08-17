@@ -1,6 +1,6 @@
 <script setup>
 defineProps({
-    userId: String,
+    userId: Number,
     message: Object,
 });
 </script>

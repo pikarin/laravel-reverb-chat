@@ -11,7 +11,7 @@ const messages = ref([]);
 const scroll = ref(null);
 
 const scrollToBottom = () => {
-    scroll.value.current.scrollIntoView({ behaviour: "smooth" });
+    scroll.value.scrollIntoView({ behaviour: "smooth" });
 }
 
 const connectWebSocket = () => {
